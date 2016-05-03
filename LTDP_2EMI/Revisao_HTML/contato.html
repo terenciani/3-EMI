@@ -7,6 +7,15 @@
 		<!--Configuração de acentuação-->
 		<meta charset="utf-8"></meta>
 		<title>Contato</title>
+
+		<!-- A linha abaixo serve para importar o layout do bootstrap, já vem com configurações prontas -->
+		<link href="bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
+		<script src="bootstrap-3.3.6/js/bootstrap.min.js"></script>
+
+		<!--A linha abaixo é responsável pela configuração visual da página. O estilo.css é um arquivo externo que deve estar dentro da pasta do projeto.-->
+		<link href="estilo.css" rel="stylesheet">
+
+
 	</head>
 
 	<!--Conteúdo, tudo que eu quero que apareça para o usuário-->
@@ -19,7 +28,7 @@
 				a barra "/" depois do br acelera o tempo e processamento
 			-->
 			<br /><br />
-			<input id="in_email" type="text" placeholder="exemplo@gmail.com"> </input>
+			<input id="in_email" type="email" placeholder="exemplo@gmail.com"> </input>
 
 			<br /> <br />
 
@@ -38,8 +47,10 @@
 			<br /> <br />
 
 			<!--A entrada de dados (input) do tipo submit serve para submeter os dados do formulário. A entrada (input) do tipo botão serve para configurar os eventos que irão ocorrer na página-->
-			<input id="btn_cancelar" type="button" value="Cancelar"> </input>
-			<input id="btn_enviar" type="submit" value="Enviar"> </input>
+			<input id="btn_cancelar" type="button" value="Cancelar" class="btn btn-danger"> </input>
+			<input id="btn_enviar" type="submit" value="Enviar" class="btn btn-success"> </input>
+
+			
 		</form>
 
 	</body>
