@@ -2,5 +2,12 @@
 	para selecionar um elemento do html podemos selecionar
 */
 h1{
-	color: green;
+	color: rgb(40,47,159);
+}
+#test{
+	font-weight: bold;
+
+}
+.italico{
+	font-style: italic;
 }
