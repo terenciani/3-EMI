@@ -20,44 +20,39 @@
 
 	<!--Conteúdo, tudo que eu quero que apareça para o usuário-->
 	<body>
-		<h1 id="test" class="italico">Contato</h1>
+		<div class="container jumbotron">
+			<h1>Contato</h1>
+			<form>
+				
+				<div class="form-group">
+					<label for="txt-usr">Nome</label>
+					<input type="text" class="form-control" id="txt-usr">
+				</div>
+								
+				<div class="form-group">
+					<label for="txt-email">E-mail</label>
+					<input type="text" class="form-control" id="txt-email" placeholder="exemplo@gmail.com">
+				</div>
+				<br /> <br />
 
-		<h1>Contato</h1>
-		<h1>Contato</h1>
-		<h1 class="italico">Contato</h1>
-		<h1>Contato</h1>
-		<h1>Contato</h1>
-		<form>
-			<input id="in_name" type="text" placeholder="Nome"> </input>
-			<!--
-				Pular Linha - tag br
-				a barra "/" depois do br acelera o tempo e processamento
-			-->
-			<br /><br />
-			<input id="in_email" type="email" placeholder="exemplo@gmail.com"> </input>
+				<!--As opções de seleção sobre o assunto do email-->
+				<select id="assunto">
+					<option value="padrao">Selecione um Assunto </option>
+					<option value="reclamacao">Reclamação </option>
+					<option value="sugestao">Sugestão </option>
+				</select>
 
-			<br /> <br />
+				<br /> <br />
 
-			<!--As opções de seleção sobre o assunto do email-->
-			<select id="assunto">
-				<option value="padrao">Selecione um Assunto </option>
-				<option value="reclamacao">Reclamação </option>
-				<option value="sugestao">Sugestão </option>
-			</select>
-
-			<br /> <br />
-
-			<textarea rows="5" cols="50" placeholder="Mensagem"></textarea>
+				<textarea rows="5" cols="50" placeholder="Mensagem"></textarea>
 
 
-			<br /> <br />
+				<br /> <br />
 
-			<!--A entrada de dados (input) do tipo submit serve para submeter os dados do formulário. A entrada (input) do tipo botão serve para configurar os eventos que irão ocorrer na página-->
-			<input id="btn_cancelar" type="button" value="Cancelar" class="btn btn-danger"> </input>
-			<input id="btn_enviar" type="submit" value="Enviar" class="btn btn-success"> </input>
-
-			
-		</form>
-
+				<!--A entrada de dados (input) do tipo submit serve para submeter os dados do formulário. A entrada (input) do tipo botão serve para configurar os eventos que irão ocorrer na página-->
+				<input id="btn_cancelar" type="button" value="Cancelar" class="btn btn-danger"> </input>
+				<input id="btn_enviar" type="submit" value="Enviar" class="btn btn-success"> </input>
+			</form>
+		<div>
 	</body>
 </html>

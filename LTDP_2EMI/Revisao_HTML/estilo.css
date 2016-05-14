@@ -1,13 +1,20 @@
 /*
 	para selecionar um elemento do html podemos selecionar
 */
+
+/*selecionando pelo nome da tag*/
 h1{
 	color: rgb(40,47,159);
+	text-align: center;
 }
+
+/*selecionando pelo id do elemento*/
 #test{
 	font-weight: bold;
 
 }
+
+/*selecionando pela classe do elemento*/
 .italico{
 	font-style: italic;
 }
