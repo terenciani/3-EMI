@@ -34,7 +34,7 @@
 				<label for="txt_codigo">Código do aluno:</label>
 				<!-- a tag input representa uma entrada de dados do usuario, é necessário informar o tipo desta entrada de dados. -->
 				<input type="text"
-					class="form-control" id="txt_codigo" name="codigo" />
+					class="form-control" id="txt_codigo" name="meucodigo" />
 			</div>
 			<div class="form-group">
 				<label for="txt_name">Nome:</label> <input type="text"
@@ -45,7 +45,7 @@
 				<label for="slct_op1">Opção 1:</label>
 				<!-- A tag select é utilizada para que o usuário possa selecionar uma opção dentro de um combo -->
 				<select id="slct_op1"
-					class="form-control">
+					class="form-control" name="opcao1">
 					<option value="padrao">Centro de Interesse 1</option>
 					<option value="musica">Música</option>
 					<option value="teatro">Teatro</option>
@@ -54,7 +54,7 @@
 			</div>
 			<div class="form-group">
 				<label for="slct_op2">Opção 2:</label> <select id="slct_op2"
-					class="form-control">
+					class="form-control" name="opcao2">
 					<option value="padrao">Centro de Interesse 2</option>
 					<option value="musica">Música</option>
 					<option value="teatro">Teatro</option>
@@ -74,7 +74,7 @@
 				além disso, no nosso css está adicionamos mais configurações na classe
 			-->
 			<div class="row centralizado">
-				<button type="button" class="btn btn-danger btn-lg">
+				<button type="reset" class="btn btn-danger btn-lg">
 					<span class="glyphicon glyphicon-flash" aria-hidden="true"></span>
 					Cancelar
 				</button>
